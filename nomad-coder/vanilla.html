@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <span>Total Clicks: 0</span>
+        <button id="btn">Click me</button>
+    </body>
+    <script>
+        let counter = 0;
+        const button = document.getElementById('btn');
+        const span = document.querySelector('span');
+        function handleClick() {
+            // console.log('I have been clicked!');
+            counter = counter + 1;
+            span.innerText = `Total Clicks: ${counter}`; // HTML 업데이트
+        }
+        button.addEventListener('click', handleClick); // click 이벤트 감지할 때마다 호출할 함수를 설정
+    </script>
+</html>
